@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit {
     {image : "../../assets/images/safe.png" , title : "LOCKED SAFE"} ,
     {image : "../../assets/images/submarine.png" , title : "SUBMARINE"}
   ]
-  
+
   constructor() { }
 
   ngOnInit(): void {
