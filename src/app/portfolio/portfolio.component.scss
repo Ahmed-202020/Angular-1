@@ -1,0 +1,25 @@
+@import "../../vars" ;
+.portfolio{
+  padding: 150px 0 100px ;
+  .title{
+    @extend %title ;
+    color: $min-1 ;
+    text-align: center ;
+    font-size: 30pt;
+    font-weight: bolder ;
+  }
+  .icon{
+    @extend %icon ;
+    color: $min-1;
+    text-align: center;
+    &::before , &::after{
+      background-color: $min-1;
+    }
+    &::before{
+      right: 40% ;
+    }
+    &::after{
+      left: 40% ;
+    }
+  }
+}

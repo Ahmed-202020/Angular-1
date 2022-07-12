@@ -1,0 +1,50 @@
+@import "../../vars" ;
+.navbar{
+  background-color: $min-1 ;
+  padding: 15px 150px;
+  position: fixed ;
+  width: 100% ;
+  z-index: 100;
+  .navbar-brand{
+    color: white ;
+    font-weight: bold ;
+    font-size: 24px ;
+    line-height: 42px ;
+  }
+  .navbar-collapse{
+    justify-content: end ;
+    .navbar-nav{
+      .nav-item{
+        &:hover{
+          .nav-link{
+            color: $min-2 ;
+          }
+        }
+        &:nth-child(2){
+          margin-inline: 15px ;
+        }
+        .nav-link{
+          color: white ;
+          font-weight: bold ;
+          font-size: 14px ;
+          line-height:20px ;
+        }
+      }
+    }
+  }
+  .active{
+    background-color: $min-2 ;
+    padding: 10px 16px ;
+    border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;
+    &:hover{
+      color: $white !important;
+    }
+  }
+}
+
+
+

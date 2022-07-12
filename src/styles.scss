@@ -1,1 +1,347 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./vars" ;
+
+
+//dir rtl
+
+html[dir="rtl"]{
+  .navbar{
+    .navbar-brand{
+      margin-right: 0 ;
+      margin-left: 1rem ;
+    }
+    .navbar-nav{
+      padding-right: 0 ;
+    }
+  }
+  .portfolio{
+    .modal{
+      .close{
+        text-align: left !important;
+        margin-left: 15px !important ;
+        margin-right: 0 !important ;
+      }
+    }
+  }
+  .about{
+    .show-case{
+      .text-1{
+        padding-right: 130px !important;
+        padding-left: 0 !important;
+      }
+      .text-2{
+        padding-left: 130px !important;
+        padding-right: 0 !important;
+      }
+    }
+  }
+  footer{
+    .info{
+      .social-media{
+        .social-icon{
+          a+a{
+            margin-right: 10px !important;
+            margin-left: initial !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//res(ltr)
+
+@media(max-width:1199.98px){
+  .portfolio{
+    &>.icon{
+      &::before{
+        right: 38% !important ;
+      }
+      &::after{
+        left: 38% !important ;
+      }
+    }
+  }
+}
+@media(max-width:1024px){
+  .portfolio{
+    &>.icon{
+      &::before{
+        right: 36% !important ;
+      }
+      &::after{
+        left: 36% !important ;
+      }
+    }
+  }
+  .about{
+    .show-case{
+      padding-inline: 100px !important ;
+    }
+  }
+}
+@media(max-width:991.98px){
+  .navbar{
+    .navbar-toggler{
+      svg{
+        color: $min-2;
+        border: 3px solid $white ;
+        padding: 8px 16px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+      &:focus{
+        box-shadow: none;
+      }
+    }
+    .navbar-nav{
+      .nav-item{
+        &:nth-child(2){
+          margin-inline: 0 !important ;
+        }
+      }
+    }
+    .active{
+      padding: 10px 8px !important ;
+    }
+  }
+  .portfolio{
+    .projects{
+      padding-inline: 70px !important;
+    }
+  }
+  .about{
+    .show-case{
+      padding-inline: 50px !important ;
+    }
+  }
+  footer{
+    .info{
+      padding: 100px 15px !important ;
+    }
+  }
+}
+@media(max-width:912px){
+  .portfolio{
+    &>.icon{
+      &::before{
+        right: 35% !important ;
+      }
+      &::after{
+        left: 35% !important ;
+      }
+    }
+  }
+}
+@media(max-width:768px){
+  .navbar{
+    padding: 15px !important ;
+  }
+  .portfolio{
+    &>.icon{
+      &::before{
+        right: 33% !important ;
+      }
+      &::after{
+        left: 33% !important ;
+      }
+    }
+  }
+}
+@media(max-width:575.98px){
+  .portfolio{
+    &>.icon{
+      &::before{
+        right: 27% !important ;
+      }
+      &::after{
+        left: 27% !important ;
+      }
+    }
+    .projects{
+      padding-inline: 25px !important;
+    }
+    .modal{
+      .modal-dialog{
+        max-width: 100% !important;
+        .modal-content{
+          .modal-footer{
+            .text{
+              padding-inline: 50px !important ;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about{
+    .show-case{
+      grid-template-columns:repeat(auto-fill , minmax(calc(100% / 2) , 1fr)) !important;
+      .text-1 , .text-2{
+        padding-left: 0  !important;
+        padding-right: 0 !important;
+      }
+    }
+
+  }
+  .contact{
+    .form-group{
+      width: 400px !important ;
+    }
+  }
+  footer{
+    .info{
+      grid-template-columns: repeat(auto-fill , minmax(calc(100% / 2) , 1fr)) !important;
+    }
+  }
+}
+@media(max-width:415px){
+  header{
+    .image{
+      width: 120px !important ;
+    }
+    .title{
+      font-size: 17pt !important;
+    }
+    .text{
+      font-size: 9pt !important;
+    }
+  }
+  .portfolio{
+    &>.icon{
+      &::before{
+        right: 70px !important ;
+      }
+      &::after{
+        left: 70px !important ;
+      }
+    }
+    .projects{
+      grid-template-columns: repeat(auto-fill , minmax(calc(100% / 3) , 1fr)) !important;
+    }
+  }
+  .about{
+    .title{
+      font-size: 24pt !important;
+    }
+  }
+  .contact{
+    .title{
+      font-size: 24pt !important ;
+    }
+    .form-group{
+      width: 350px !important ;
+    }
+  }
+}
+@media(max-width:376px){
+  .portfolio{
+    &>.icon{
+      &::before{
+        right: 50px !important ;
+      }
+      &::after{
+        left: 50px !important ;
+      }
+    }
+  }
+  .contact{
+    .form-group{
+      width: 320px !important ;
+    }
+  }
+}
+@media(max-width:360px){
+  .portfolio{
+    .modal{
+      .modal-dialog{
+        .modal-content{
+          .modal-header{
+            .title{
+              font-size: 24pt !important;
+            }
+            .icon{
+              &::before , &::after{
+                width: 80px !important;
+              }
+            }
+          }
+          .modal-footer{
+            .text{
+              padding-inline: 10px !important ;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about{
+    .show-case{
+      padding-inline: 25px !important;
+    }
+  }
+
+}
+@media(max-width:280px){
+  .navbar{
+    padding: 15px 0 !important ;
+    .navbar-brand{
+      font-size: 18px !important ;
+    }
+  }
+  .portfolio{
+    .icon{
+      &::before{
+        right: 15px !important ;
+      }
+      &::after{
+        left: 15px !important ;
+      }
+    }
+    .projects{
+      grid-template-columns: repeat(auto-fill , minmax(calc(100% / 2) , 1fr)) !important;
+    }
+    .modal{
+      .modal-dialog{
+        .modal-content{
+          .modal-header{
+            .icon{
+              &::before{
+                right: 40px !important;
+              }
+              &::after{
+                left: 40px !important ;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact{
+    .icon{
+      &::before , &::after{
+        width: 80px !important ;
+      }
+    }
+    .form-group{
+      width: 220px !important ;
+    }
+  }
+}
+
+//res(rtl)
+@media(max-width:575.98px){
+  html[dir = "rtl"]{
+    .about{
+      .show-case{
+        .text-1 , .text-2{
+          padding-left: 0  !important;
+          padding-right: 0 !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../vars" ;
+header{
+  background-color: $min-2 ;
+  display: flex ;
+  flex-direction: column ;
+  align-items: center ;
+  justify-content: center ;
+  padding: 160px 0 50px ;
+  .image{
+    width: 190px ;
+    margin-bottom: 20px ;
+    img{
+      width: 100% ;
+    }
+  }
+  .title{
+    @extend %title ;
+  }
+  .icon{
+    @extend %icon ;
+    &::before{
+      right: 50px ;
+    }
+    &::after{
+      left: 50px  ;
+    }
+  }
+  .text{
+    color: $white ;
+    font-size: 16pt ;
+  }
+}

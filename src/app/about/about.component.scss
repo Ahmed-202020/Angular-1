@@ -1,0 +1,35 @@
+@import "../../vars" ;
+.about{
+  display: flex ;
+  flex-direction: column ;
+  align-items: center ;
+  justify-content: center ;
+  padding: 160px 0 100px ;
+  background-color: $min-2 ;
+  .title{
+    @extend %title ;
+    font-size: 30pt ;
+  }
+  .icon{
+    @extend %icon ;
+    &::before{
+      right: 50px ;
+    }
+    &::after{
+      left: 50px  ;
+    }
+  }
+  .show-case{
+    padding-inline: 150px ;
+    display: grid ;
+    color: $white;
+    grid-template-columns: repeat(auto-fill , minmax(calc(100% / 3) , 1fr));
+    gap: 40px ;
+      .text-1{
+        padding-left: 130px ;
+      }
+      .text-2{
+        padding-right: 130px ;
+      }
+  }
+}

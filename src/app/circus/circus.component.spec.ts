@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { CircusComponent } from './circus.component';
+
+describe('CircusComponent', () => {
+  let component: CircusComponent;
+  let fixture: ComponentFixture<CircusComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ CircusComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(CircusComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
