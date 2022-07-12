@@ -10,12 +10,6 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { CabinComponent } from './cabin/cabin.component';
-import { CakeComponent } from './cake/cake.component';
-import { CircusComponent } from './circus/circus.component';
-import { ControlerComponent } from './controler/controler.component';
-import { SafeComponent } from './safe/safe.component';
-import { SubmarinComponent } from './submarin/submarin.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +20,7 @@ import { SubmarinComponent } from './submarin/submarin.component';
     AboutComponent,
     ContactComponent,
     FooterComponent,
-    NotFoundComponent,
-    CabinComponent,
-    CakeComponent,
-    CircusComponent,
-    ControlerComponent,
-    SafeComponent,
-    SubmarinComponent
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
