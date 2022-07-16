@@ -13,13 +13,11 @@ html[dir="rtl"]{
       padding-right: 0 ;
     }
   }
-  .portfolio{
-    .modal{
-      .close{
-        text-align: left !important;
-        margin-left: 15px !important ;
-        margin-right: 0 !important ;
-      }
+  .modal {
+    .close {
+      text-align: left !important;
+      margin-left: 15px !important;
+      margin-right: 0 !important;
     }
   }
   .about{
@@ -163,14 +161,15 @@ html[dir="rtl"]{
     .projects{
       padding-inline: 25px !important;
     }
-    .modal{
-      .modal-dialog{
-        max-width: 100% !important;
-        .modal-content{
-          .modal-footer{
-            .text{
-              padding-inline: 50px !important ;
-            }
+  }
+  .modal {
+    .modal-dialog {
+      max-width: 100% !important;
+
+      .modal-content {
+        .modal-footer {
+          .text {
+            padding-inline: 50px !important;
           }
         }
       }
@@ -254,24 +253,23 @@ html[dir="rtl"]{
   }
 }
 @media(max-width:360px){
-  .portfolio{
-    .modal{
-      .modal-dialog{
-        .modal-content{
-          .modal-header{
-            .title{
-              font-size: 24pt !important;
-            }
-            .icon{
-              &::before , &::after{
-                width: 80px !important;
-              }
+  .modal {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          .title {
+            font-size: 24pt !important;
+          }
+          .icon {
+            &::before,
+            &::after {
+              width: 80px !important;
             }
           }
-          .modal-footer{
-            .text{
-              padding-inline: 10px !important ;
-            }
+        }
+        .modal-footer {
+          .text {
+            padding-inline: 10px !important;
           }
         }
       }
@@ -303,17 +301,17 @@ html[dir="rtl"]{
     .projects{
       grid-template-columns: repeat(auto-fill , minmax(calc(100% / 2) , 1fr)) !important;
     }
-    .modal{
-      .modal-dialog{
-        .modal-content{
-          .modal-header{
-            .icon{
-              &::before{
-                right: 40px !important;
-              }
-              &::after{
-                left: 40px !important ;
-              }
+  }
+  .modal {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          .icon {
+            &::before {
+              right: 40px !important;
+            }
+            &::after {
+              left: 40px !important;
             }
           }
         }

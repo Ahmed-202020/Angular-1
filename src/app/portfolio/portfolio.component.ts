@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { filter } from 'rxjs';
 import { Projects } from './../projects';
 
 @Component({
@@ -8,8 +7,7 @@ import { Projects } from './../projects';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-
-
+  selectedItem:any = {};
   projects:Projects[] = [
     {image : "../../assets/images/cabin.png" , title : "LOG CABIN"} ,
     {image : "../../assets/images/cake.png" , title : "TASTY CAKE"} ,
@@ -18,10 +16,10 @@ export class PortfolioComponent implements OnInit {
     {image : "../../assets/images/safe.png" , title : "LOCKED SAFE"} ,
     {image : "../../assets/images/submarine.png" , title : "SUBMARINE"}
   ]
-
+  showModal(index: number) {
+    this.selectedItem = this.projects[index];
+  }
   constructor() { }
-
   ngOnInit(): void {
   }
-
 }
